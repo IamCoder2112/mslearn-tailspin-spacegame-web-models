@@ -35,10 +35,6 @@ steps:
     minorVersion: '0'
     patchVersion: '0'
  
-- task: Checkmarx AST@2
-  inputs:
-    projectName: '$(Build.Repository.Name)'
-    branchName: '$(Build.SourceBranchName)'
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
